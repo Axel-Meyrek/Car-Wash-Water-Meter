@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/flaticon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaQueries.css">
+    <title>Car Wash Water Meter</title>
+</head>
+<body>
+
+    <!-- Header ---------------------------------------------->
+    <header class="header">
+        <p class="nameusuario">Hola</p>
+    </header>
+
+
+    <!-- Barra de navegación --------------------------------->
+    <nav class="nav">
+        <button id="btnSectionLogin" class="nav_item"><i class="fa-solid fa-user"></i></button>
+        <button id="btnSectionCronometro" class="nav_item"><i class="fa-solid fa-clock"></i></button>
+        <button id="btnSectionObjetivo" class="nav_item"><i class="fa-solid fa-book"></i></button>
+    </nav>
+
+
+
+    <!-- Section Login ------------------------------------ -->
+    <section class="sectionLogin">
+        <h1 class="sectionLogin_title">Car Wash <br> Water Meter</h1>
+
+
+        <form action="" class="form">
+            <input id="inputNameUsuario" class="form_input" type="text" placeholder="Nombre Completo">    
+            <input id="inputCorreoUsuario" class="form_input" type="email" placeholder="Correo Electronico">    
+            <button id="btnSaveForm" class="form_button button">Comenzar</button>
+        </form>
+    </section>
+
+
+    <!-- Section Objetivo ------------------------------ -->
+    <section class="sectionObjetivo sectionObjetivo--off">
+        <h2 class="sectionObjetivo_title">Objetivo</h2>
+        <p class="sectionObjetivo_description">A través del desarrollo del proyecto se evidencia un interes por entregar a los clientes una propuesta innovadora y un servicio de calidad aprovechando al maximo el tiempo contribuyendo al medio ambiente</p>
+        <img width="350px" height="350px" src="img/gotaAgua.png" alt="">
+    </section>
+
+    <!-- Section Cronometro ------------------------------------>
+    <section class="sectionCronometro">
+        <h2 class="sectionCronometro_title">Cronometro</h2>
+
+        <div class="conteinerCronometro">
+            <p class="cronometro">3:22</p>
+        </div>
+
+
+        <button id="btnComenzarCronometro" class="sectionCronometro_button button">Iniciar</button>
+    </section>
+
+
+
+    <!-- Complementos -->
+    <script src="https://kit.fontawesome.com/7b35ff6dce.js" crossorigin="anonymous"></script>
+    <!-- JavaScript -->
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,189 @@
+/* Importaciones--------------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Darumadrop+One&display=swap');
+/* font-family: 'Darumadrop One', cursive; */
+
+/* Variables------------------------------ */
+:root{
+    /* Colores */
+    --colorPrincipal: #19A7CE;
+    --colorClaro: #F6F1F1;
+    --black: black;
+    /* Shadows */
+    --shadowComponents: 0 0 10px rgba(0, 0, 0, 0.25);
+    --shadowButtons: 0 4px 4px rgba(0, 0, 0, 0.25);
+    --shadowTexts: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    /* Font-size */
+    --sizeTitle: 2.5rem;
+    --sizeTexts: 1rem;
+}
+
+/* Normalización ------------------------------------------------------- */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Darumadrop One', cursive;
+    font-size: var(--sizeTexts);
+    text-shadow: var(--shadowTexts);
+}
+body{
+    background-color: var(--colorClaro);
+}
+
+/* section{
+    width: 90%;
+    overflow: hidden;
+    max-width: 1200px;
+    margin: 0 auto; 
+    padding-top: 100px;
+} */
+
+h1, h2{
+    font-size: var(--sizeTitle);
+    color: var(--colorPrincipal);
+    text-align: center;
+}
+
+.button{
+    background-color: var(--colorPrincipal);
+    box-shadow: var(--shadowButtons);
+    padding: .5em 3em;
+    color: var(--colorClaro);
+    transition: all .3s;
+    border: 1px solid var(--colorPrincipal);
+    max-width: 200px;
+    margin: 0 auto;
+}
+.button:hover{
+    background-color: var(--colorClaro);
+    border: 1px solid var(--black);
+    color: var(--black);
+
+}
+
+
+/* Header--------------------------------------------------------------- */
+.header{
+    background-color: var(--colorPrincipal);
+    padding: 1em 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: var(--shadowComponents);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+}
+.nameusuario{
+    text-align: center;
+    color: var(--colorClaro);
+}
+
+/* Barra de Navegación ------------------------------------------*/
+.nav{
+    background-color: var(--colorPrincipal);
+    box-shadow: var(--shadowComponents);
+    padding: 1em 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+}
+.nav_item, i{
+    background: none;
+    border: none;
+    font-size: var(--sizeTitle);
+    color: var(--colorClaro);
+}
+
+/* Section Login ------------------------------------------------------- */
+.sectionLogin{
+    background-color: var(--colorClaro);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 20;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    transition: transform .8s;
+}
+.sectionLogin--off{
+    transform: translateY(-100%);
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 500px;
+    gap: 20px;
+}
+.form_input{
+    background-color: var(--colorClaro);
+    border: 2px solid var(--colorPrincipal);
+    border-radius: 5px;
+    padding: .5em 1em;
+    width: 90%;
+}
+
+/* Section Objetivo ----------------------------------------------------- */
+.sectionObjetivo{
+    background-color: var(--colorClaro);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transition: transform .8s;
+}
+.sectionObjetivo--off{
+    transform: translateY(-100%);
+}
+.sectionObjetivo_description{
+    text-align: center;
+    padding: 0 1em;
+    line-height: 30px;
+    max-width: 800px;
+}
+
+/* Cronometro -------------------------------------------------------------------- */
+.sectionCronometro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    gap: 50px;
+    
+}
+.conteinerCronometro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    height: 300px;
+    width: 300px;
+    border: 2px solid var(--colorPrincipal);
+}
+.cronometro{
+    font-size: var(--sizeTitle);
+}
